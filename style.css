@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+body{
+    font-size: 24px;
+    color: #555333;
+}
+
+.main{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 50px 10px;
+    position: relative;
+}
+
+.main::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 35px;
+    background-color: gray;
+}
+
+.main::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 35px;
+    background-color: gray;
+}
+
+.head{
+    display: flex;
+    align-items: flex-end ;
+}
+
+.photo{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 15px 0;
+    color: #444;
+}
+
+.list{
+    list-style-type: none;
+}
+
+.contacts{
+    font-size: 1em;
+}
+
+.contact{
+    color: inherit;
+    text-decoration: none;
+}
+
+.tel{
+    position: relative;
+    padding-left: 30px ;
+}
+
+.tel::before{
+    position: absolute;
+    top: 0;
+    transform: translateY(25%);
+    left: 0;
+    content: url(imgs/phone.svg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.mail{
+    position: relative;
+    padding-left: 30px ;
+}
+
+.mail::before{
+    position: absolute;
+    top: 0;
+    transform: translateY(15%);
+    left: 0;
+    content: url(imgs/envelope.svg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+
+section{
+    margin-bottom: 50px;
+}
+
+h2{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #444;
+}
