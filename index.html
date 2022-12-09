@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Stanislau</title>
+</head>
+<body>
+    <header class="header container">
+        <nav class="naviation">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#aboutMe">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#code">Code example</a></li>
+                <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main container">
+        <section class="title-section">
+            <img class="photo" src="imgs/img1.png" alt="my photo">
+            <h1 class="page-tite">Stanislau<br>Krasouski</h1>
+        </section>
+        <section id="aboutMe">
+            <h2 class="section-title">about me</h2>
+            <p class="text">I am a hard working and always willing to learn new skills. I can work
+                in a team because I quickly find a common language with people to
+                effectively solve work problems. Also it is no problem to work
+                independently in busy environments. My strength is to quickly find
+                information and apply it into practice.</p>
+        </section>
+        <section id="skills">
+            <h2 class="section-title">skills</h2>
+            <ul class="list">
+                <li class="list-item">HTML</li>
+                <li class="list-item">CSS</li>
+                <li class="list-item">JavaScript</li>
+                <li class="list-item">Git</li>
+                <li class="list-item">Figma</li>
+                <li class="list-item">VS Code</li>
+            </ul>
+        </section>
+        <section id="code">
+            <h2 class="section-title">Code example</h2>
+<pre><code class="code">
+function isPrime(num){
+    for(let i = 2; i &lt; num; i++){
+        if(num % i == 0) return false;
+    }
+    return true;
+}
+
+function primeInRange(m,n){
+    for(let i = m; i &lt;= n; i++){
+        if(isPrime(i) === true) alert(i);
+    }
+}
+</code></pre>
+        </section>
+
+        <section id="languages">
+            <h2 class="section-title">Languages</h2>
+            <ul class="list list-col">
+                <li class="list-item">English (A2)</li>
+                <li class="list-item">Russian (Native)</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <p class="text">Belarusian State University, Biology faculty (2016 - 2020)</p>
+        </section>
+        <section id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul class="list list-col">
+                <li class="list-item">Email: <a class="contact-link" href="mailto:xmix25@gmail.com">xmix25@gmail.com</a></li>
+                <li class="list-item">Phone: <a class="contact-link" href="tel:+375296197275">+375&nbsp;29&nbsp;619&nbsp;72&nbsp;75</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer container">
+        <a class="footer-item" href="https://github.com/xmix25" target="_blank"><img src="imgs/github-logo.svg" alt="github logo"></a>
+        <p class="footer-item">2022</p>
+        <a class="footer-item" href="https://rs.school/js-stage0/" target="_blank"><img src="/imgs/rs_school_js.svg" alt="rs-school logo"></a>
+    </footer>
+</body>
+</html>
